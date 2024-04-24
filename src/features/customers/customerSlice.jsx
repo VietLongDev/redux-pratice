@@ -1,9 +1,12 @@
+//initial state
 const initialStateCustomer = {
   fullName: "",
   nationalID: "",
   createdAt: "",
 };
 
+
+//reducer
 export default function customerReducer(state = initialStateCustomer, action) {
   switch (action.type) {
     case "customer/createCustomer":
@@ -23,6 +26,7 @@ export default function customerReducer(state = initialStateCustomer, action) {
   }
 }
 
+//funtional creator
 export function createCustomer(fullName, nationalID) {
   return {
     type: "customer/createCustomer",
