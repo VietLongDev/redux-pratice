@@ -29,7 +29,6 @@ function AccountOperations() {
     dispatch(deposit(depositAmount, currency));
     setDepositAmount("");
     setCurrency("");
-    role: team size , description, role, Responsibilty, techuse, 
   }
 
   function handleWithdrawal() {
